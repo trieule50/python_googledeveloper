@@ -8,6 +8,8 @@ For more information: [Google for Education - Python](https://developers.google.
 - Python is dynamic, interpreted lanaguage.
 - NO TYPE DECLARATIONS OF VARIABLES, PARAMETERS, FUNCTIONS, OR METHODS IN SOURCE CODE.
     - Allows code to be short and flexiable.
+- Python is case sensitive
+- Does not require a semicolon
 
 ```
 $ python3           ## Run the Python interpreter
