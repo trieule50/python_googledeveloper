@@ -36,3 +36,8 @@ Traceback (most recent call last):
 NameError: name 'foo' is not defined
 >>> ^D               ## type CTRL-d to exit  
 ```
+
+### Python Source Code
+Python source files use the ".py" extension and are called "modules".
+
+With a Python module `hello.py`, run with the shell command `python hello.py Alice` which calls the Python interpreter to execute the code in `hello.py`, passing it the command line argument 'Alice'.
