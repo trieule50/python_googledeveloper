@@ -8,10 +8,10 @@ For more information: [Google for Education - Python](https://developers.google.
 Python has a built-in string class named "str" with many handy features.
 
 Python strings are "immutable" which means they cannot be changed after they are created. 
-    - Since strings can't be changed, we construct "new" strings as we go to represent computed values. 
+- Since strings can't be changed, we construct "new" strings as we go to represent computed values. 
 
 Characters in a string can be accessed using the standard [] syntax. 
-    - Python uses a zero-basing indexing
+- Python uses a zero-basing indexing
 
 ```py
   s = 'hi'
