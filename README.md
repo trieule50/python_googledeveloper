@@ -64,3 +64,58 @@ def repeat(s, exclaim):
         result = result + '!!!'
     return result
 ```
+
+```py
+def main():
+    print repeat('Yay', False)      ## YayYayYay
+    print repeat('Woo Hoo', True)   ## Woo HooWoo HooWoo Hoo!!!
+```
+
+### Indentation
+
+One unusual Python feature is that the whitespace indentation of a piece of code affects its meaning.
+
+### Code Checked at Runtime
+
+Python does very little checking at compile time. 
+
+```py
+def main():
+    if name == 'Guido':
+        print repeeeet(name) + '!!!'
+    else:
+        print repeat(name)
+```
+
+The funny thing in Python ... this code compiles and runs fine so long as the name at runtime is not 'Guido'.
+
+### Variable Names
+
+Python prefers the underscore method but guides developers to defer to camelCasing if integrating into existing Python code. 
+
+### More on Modules and their Namespaces
+
+These are collectively known as the "Python Standard Library." Commonly used modules/packages include:
+
+- sys — access to exit(), argv, stdin, stdout, ...
+- re — regular expressions
+- os — operating system interface, file system
+
+### Online help, help(), and dir()
+
+Below are some ways to call help() and dir() from the interpreter:
+
+- `help(len)` — help string for the built-in `len()` function; note that it's "len" not "len()", which is a call to the function, which we don't want
+
+- `help(sys)` — help string for the sys module (must do an import sys first)
+dir(sys) — dir() is like `help()` but just gives a quick list of its defined symbols, or "attributes"
+
+- `help(sys.exit)` — help string for the exit() function in the sys module
+
+- `help('xyz'.split)` — help string for the split() method for string objects. You can call `help()` with that object itself or an example of that object, plus its attribute. For example, calling `help('xyz'.split)` is the same as calling `help(str.split)`.
+
+- `help(list)` — help string for list objects
+
+- `dir(list)` — displays list object attributes, including its methods
+
+- `help(list.append)` — help string for the `append()` method for list objects
