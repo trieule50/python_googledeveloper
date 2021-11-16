@@ -55,8 +55,9 @@ def both_ends(s):
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
   # +++your code here+++
-
-  return
+  a = s[0]
+  b = s[1:]
+  return a + b.replace(a, "*")
 
 
 # D. MixUp
