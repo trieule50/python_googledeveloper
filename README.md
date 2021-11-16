@@ -119,3 +119,21 @@ dir(sys) — dir() is like `help()` but just gives a quick list of its defined s
 - `dir(list)` — displays list object attributes, including its methods
 
 - `help(list.append)` — help string for the `append()` method for list objects
+
+### String Slices
+
+The slice s[start:end] is the elements beginning at start and extending up to but not including end. 
+
+Example: 
+
+Hello
+
+- s[1:4] is 'ell' -- chars starting at index 1 and extending up but not including index 4
+- s[1:] is 'ello' -- omitting either index defaults to the start or end of the string
+- s[:] is 'Hello' -- omitting both always give us a copy of the whole thing
+- s[1:100] is 'ello' -- an index that is too big is truncated down to the string length
+
+- s[-1] is 'o'
+- s[-4] is 'e'
+- s[:-3] is 'He'
+- s[-3:] is 'llo'
