@@ -149,3 +149,28 @@ text = (
     "and I'll blow your %s down."
     % (3, 'huff', 'puff', 'house'))
 ```
+
+### If Statement
+
+Python does not use {} to enclose blocks of code if/loops/functions etc.. Instead Python use the colon(:) and indentation/whitespace to group statements. 
+
+The 'zero' values all count as false: None, 0, empty string, empty list, empty dictionary.
+
+Python has the usual comparison operations: ==, !=, <, >, <=, >=
+
+The boolean operators are spelled out words *and*, *or*, *not*
+
+Example: 
+
+```py
+  if speed >= 80:
+    print 'License and registration please'
+    if mood == 'terrible' or speed >= 100:
+      print 'You have the right to remain silent.'
+    elif mood == 'bad' or speed >= 90:
+      print "I'm going to have to write you a ticket."
+      write_ticket()
+    else:
+      print "Let's try to keep it under 80 ok?"
+```
+
