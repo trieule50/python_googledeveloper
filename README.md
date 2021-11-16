@@ -137,3 +137,15 @@ Hello
 - s[-4] is 'e'
 - s[:-3] is 'He'
 - s[-3:] is 'llo'
+
+### String %
+
+Python has a printf()-like facility to put together a string. The % operator takes a printf-type format string on the left (%d int, %s string, %f/%g floating point), and the matching values in a tuple on the right:
+
+```py
+text = (
+    "%d little pigs come out, "
+    "or I'll %s, and I'll %s, "
+    "and I'll blow your %s down."
+    % (3, 'huff', 'puff', 'house'))
+```
