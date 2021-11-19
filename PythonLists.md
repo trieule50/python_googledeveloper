@@ -18,4 +18,9 @@ print len(colors) ## 3
 
 Assignment with an = on lists does not make a copy. Instead, assignment makes the two variables point to the one list in memory.
 
+Ex.
+```py
+b = colors ## Does not copy the list
+```
+
 The 'empty list' is just an empty pair of brackets []. The '+' works to append two list, so [1,2] + [3,4] yeilds [1,2,3,4]
